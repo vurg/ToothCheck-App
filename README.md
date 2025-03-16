@@ -1,17 +1,42 @@
-# ToothCheck
+# ToothCheck - A Modern Dental Booking System
 
-## Installation
+## Screenshots of System
+![ToothCheck1](assets/toothcheck2.png)
+![ToothCheck1](assets/toothcheck5.png)
+![ToothCheck1](assets/toothcheck4.png)
+![ToothCheck1](assets/toothcheck1.png)
+
+## 4+1 View Model
+We describe our system architecture using the 4+1 view model [1].
+
+## Scenarios View - Use Case Diagram
+![image](assets/ToothCheck_Use_Case_Diagram.png)
+
+## Logical View - ER Diagram
+**Important Remark:** id denotes postgres ID, whereas objectID denotes mongoDB ID -- this is important for database consistency
+![ToothCheck_ER_Diagram](assets/ToothCheck_ER_Diagram.png)
+
+## Process View - Sequence Diagram 
+**Typical Use Case:** patient logs in and creates a booking.
+![Screenshot_2024-01-09_085512](assets/ToothCheck_Sequence_Diagram.png)
+
+## Development View - Component Diagram
+![ToothCheck_System_Architecture](assets/ToothCheck_System_Architecture.png)
+
+## Physical View - Deployment Diagram
+![ToothCheck_Deployment_Diagram](assets/ToothCheck_Deployment_Diagram.png)
+
+## Installation - Clone and Build Microservices, Deploy with Docker Compose
+
+This is project uses a separate repository for each microservice.
 
 ### Prerequisites
-
-Before installing any of the parts, you need to have Docker installed.
+You need to have Docker installed.
 
 - [Docker](https://www.docker.com/)
-
-
 ### 1. Clone the Repository:
 
-Open your terminal and navigate to the desired directory where you want to clone the repository. Run the following command:
+Open your terminal and navigate to the desired directory where you want to clone the main project repository:
 
 ```bash
 git clone git@github.com:vurg/distributed-systems.git
@@ -150,32 +175,6 @@ You can check the status of the running containers to ensure everything is worki
 ```bash
 docker ps
 ```
-
-# Screenshots of System
-![ToothCheck1](assets/toothcheck2.png)
-![ToothCheck1](assets/toothcheck5.png)
-![ToothCheck1](assets/toothcheck4.png)
-![ToothCheck1](assets/toothcheck1.png)
-
-# 4+1 View Model
-We describe our system architecture using the 4+1 view model [1].
-
-## Scenarios View - Use Case Diagram
-![image](assets/ToothCheck_Use_Case_Diagram.png)
-
-## Logical View - ER Diagram
-**Important Remark:** id denotes postgres ID, whereas objectID denotes mongoDB ID -- this is important for database consistency
-![ToothCheck_ER_Diagram](assets/ToothCheck_ER_Diagram.png)
-
-## Process View - Sequence Diagram 
-**Typical Use Case:** patient logs in and creates a booking.
-![Screenshot_2024-01-09_085512](assets/ToothCheck_Sequence_Diagram.png)
-
-## Development View - Component Diagram
-![ToothCheck_System_Architecture](assets/ToothCheck_System_Architecture.png)
-
-## Physical View - Deployment Diagram
-![ToothCheck_Deployment_Diagram](assets/ToothCheck_Deployment_Diagram.png)
 
 ### References
 [1] Kruchten, P. B. (1995). The 4+ 1 view model of architecture. IEEE software, 12(6), 42-50.
